@@ -2,16 +2,17 @@
 
 [Header
   fullWidth:true
-  title:"Underriner_Dynamic"
-  subtitle:"Welcome to Idyll. Open index.idyll to start writing"
-  author:"Your Name Here"
-  authorLink:"https://idyll-lang.org"
+  title:"Leisure Studies"
+  subtitle:"Our Economic Model Fails to Fairly Distribute Leisure"
+  author:"Quinn Underriner"
+  authorLink:"https://github.com/qunderriner/Underriner_Leisure_Agenda"
   date:`(new Date()).toDateString()`
   background:"#222222"
   color:"#ffffff"
    /]
-
-## Introduction
+   
+[TextContainer]
+## How do happy people spend their time?
 
 This is an Idyll scrolly-telling post. It is generated via
 the file `index.idyll`. To compile this post using
@@ -23,147 +24,26 @@ data-driven graphics.
 Configuration can be done via the `idyll` field in `package.json`.
 
 [var name:"state" value:0 /]
-
-[Scroller currentStep:state]
-
-  [Graphic className:"d3-component-container"]
-    [CustomD3Component className:"d3-component" state:`state+1` /]
-  [/Graphic]
-
-  [Step]
-  
-    ## Markup
-
-    Idyll is based on Markdown.
-
-    You can use familiar syntax
-    to create **bold** (`**bold**` ) and *italic* (``*italic*` ) styles,
-
-    * lists
-    * of
-    * items,
-
-    ```
-    * lists
-    * of
-    * items,
-    ```
-
-    1. and numbered
-    2. lists
-    3. of items,
-
-
-    ```
-    1. and numbered
-    2. lists
-    3. of items,
-    ```
-
-    in addition to [hyperlinks](https://idyll-lang.org) and images:
-
-    ![quill](static/images/quill.svg)
-
-    ```
-    ![quill](static/images/quill.svg)
-    ```
+[Scroller currentState:state]
+  [Step state:"title" className:"header"]
+    [Header
+    title:"Leisure Studies"
+    subtitle:"Our Economic Model Fails to Fairly Distribute Leisure"
+  author:"Quinn Underriner"
+      authorLink:"https://twitter.com/mathisonian" /]
+  [/Step]
+  [Step state:"start-drop"]
+    on average, the happiest people spend 15 more minutes a day caring for people in their household, 
+    and about 18 minutes less working
   [/Step]
 
-  [Step]
-    ## Components
-
-    Components can be embedded using a bracket syntax:
-
-    ```
-    [Range /]
-    ```
-
-    and can contain nested content:
-
-    ```
-    [Equation]e = mc^{2}[/Equation]
-    ```
-
-    Components accept properties:
-
-    ```
-    [Range value:x min:0 max:1 /]
-    ```
-
-    that can be bound to variables to achieve interactivity (more in next section).
-
-
-    A variety of components are included by default. See [all the available components](https://idyll-lang.org/docs/components/). You can also use any html tag, for example: `[div] A div! [/div]`.
-
-    To create your own, add it to the `components/` folder. There are examples of how to use Idyll with React and D3 based components already included.
-  
-  [/Step]
-
-  [Step]
-    ## Interactivity
-
-    Here is how you can instantiate a variable and bind it to a component:
-
-    [var name:"exampleVar" value:5 /]
-
-    [Range min:0 max:10 value:exampleVar /]
-    [Display value:exampleVar /]
-
-    ```
-    [var name:"exampleVar" value:5 /]
-
-    [Range min:0 max:10 value:exampleVar /]
-    [Display value:exampleVar /]
-    ```
+  [Step state:"show-generator"]
+    Damn, some of these people are stressed as hell. 
+  [/Step]  
+  [Step state:"table"]
+  [data name:"map1" source:"testmapdata2.csv"  /]
+  [IdyllVegaLite data:map1 spec:` {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "repeat": {"row": ["Eating & Drinking"]}, "spec": {"data": {"url": "https://vega.github.io/vega-datasets/data/us-10m.json", "format": {"feature": "states", "type": "topojson"}}, "mark": "geoshape", "encoding": {"color": {"type": "quantitative", "field": {"repeat": "row"}}}, "height": 300, "projection": {"type": "albersUsa"}, "transform": [{"lookup": "id", "from": {"data": {"name": "data-66c033165ec5a758f6754752607efce7"}, "key": "STATEFIP", "fields": ["Eating & Drinking"]}}], "width": 500}, "resolve": {"scale": {"color": "independent"}}, "title": {"text": ["Average Dollars Earned per Hour of Sleep"], "subtitle": ["Data from American Time Use Survey 2003-2018"]}, "$schema": "https://vega.github.io/schema/vega-lite/v4.0.2.json", "datasets": {"data-66c033165ec5a758f6754752607efce7": [{"STATEFIP": 1, "Eating & Drinking": 51.81957186544342}, {"STATEFIP": 2, "Eating & Drinking": 28.928571428571427}, {"STATEFIP": 4, "Eating & Drinking": 68.16190476190476}, {"STATEFIP": 5, "Eating & Drinking": 43.01724137931034}, {"STATEFIP": 6, "Eating & Drinking": 64.47241867043847}, {"STATEFIP": 8, "Eating & Drinking": 58.64588528678304}, {"STATEFIP": 9, "Eating & Drinking": 66.33802816901408}, {"STATEFIP": 10, "Eating & Drinking": 50.989010989010985}, {"STATEFIP": 12, "Eating & Drinking": 64.04932182490752}, {"STATEFIP": 13, "Eating & Drinking": 75.13294797687861}, {"STATEFIP": 15, "Eating & Drinking": 15.0}, {"STATEFIP": 16, "Eating & Drinking": 89.41780821917808}, {"STATEFIP": 17, "Eating & Drinking": 72.50140845070422}, {"STATEFIP": 18, "Eating & Drinking": 51.83375634517766}, {"STATEFIP": 19, "Eating & Drinking": 77.04968944099379}, {"STATEFIP": 20, "Eating & Drinking": 55.112612612612615}, {"STATEFIP": 21, "Eating & Drinking": 57.959847036328874}, {"STATEFIP": 22, "Eating & Drinking": 66.96052631578948}, {"STATEFIP": 23, "Eating & Drinking": 97.1484375}, {"STATEFIP": 24, "Eating & Drinking": 43.524193548387096}, {"STATEFIP": 25, "Eating & Drinking": 75.54437869822485}, {"STATEFIP": 26, "Eating & Drinking": 67.62820512820512}, {"STATEFIP": 27, "Eating & Drinking": 68.94957983193277}, {"STATEFIP": 28, "Eating & Drinking": 58.484848484848484}, {"STATEFIP": 29, "Eating & Drinking": 71.73809523809524}, {"STATEFIP": 30, "Eating & Drinking": 56.181102362204726}, {"STATEFIP": 31, "Eating & Drinking": 65.20464135021098}, {"STATEFIP": 32, "Eating & Drinking": 50.42372881355932}, {"STATEFIP": 33, "Eating & Drinking": 50.51587301587302}, {"STATEFIP": 34, "Eating & Drinking": 82.20873786407768}, {"STATEFIP": 35, "Eating & Drinking": 101.03448275862068}, {"STATEFIP": 36, "Eating & Drinking": 64.18241758241759}, {"STATEFIP": 37, "Eating & Drinking": 72.10469314079423}, {"STATEFIP": 38, "Eating & Drinking": 66.96551724137932}, {"STATEFIP": 39, "Eating & Drinking": 74.32650273224044}, {"STATEFIP": 40, "Eating & Drinking": 55.48867313915858}, {"STATEFIP": 41, "Eating & Drinking": 77.13347022587268}, {"STATEFIP": 42, "Eating & Drinking": 66.80031821797931}, {"STATEFIP": 44, "Eating & Drinking": 53.1764705882353}, {"STATEFIP": 45, "Eating & Drinking": 63.053521126760565}, {"STATEFIP": 46, "Eating & Drinking": 66.42857142857143}, {"STATEFIP": 47, "Eating & Drinking": 67.38738738738739}, {"STATEFIP": 48, "Eating & Drinking": 67.38047808764941}, {"STATEFIP": 49, "Eating & Drinking": 79.37106918238993}, {"STATEFIP": 50, "Eating & Drinking": 34.505494505494504}, {"STATEFIP": 51, "Eating & Drinking": 66.12903225806451}, {"STATEFIP": 53, "Eating & Drinking": 75.38919925512104}, {"STATEFIP": 54, "Eating & Drinking": 80.95238095238095}, {"STATEFIP": 55, "Eating & Drinking": 69.2039072039072}, {"STATEFIP": 56, "Eating & Drinking": 61.41891891891892}]}` /]
   [/Step]
 
 [/Scroller]
-
-[Scroller]
-
-  [Step]
-
-    ##Scroller
-    
-    The `Scroller` component is used to create scroll-based presentations. It can be used to create scrollytelling articles similar to this. 
-    It takes a property `currentStep` which is updated when the user scrolls to a different step.
-
-    A persistent graphic may also provided using the `Graphic` component in order to create visualizations.
-
-  [/Step]
-
-  [Step]
-
-    ## Learn More
-
-    To learn more see the documentation at https://idyll-lang.org/docs/,
-    join our [chatroom](https://gitter.im/idyll-lang/Lobby), or see the project on [GitHub](https://github.com/idyll-lang/idyll).
-  [hr /]
-    
-  [/Step]
-
-[/Scroller]
-
-[br/]
-# Technical Details
-
-## Installation
-
-- Make sure you have `idyll` installed (`npm i -g idyll`).
-- Clone this repo and run `npm install`.
-
-## Developing a post locally
-
-Run `idyll`.
-
-## Building a post for production
-
-Run `idyll build`. The output will appear in the top-level `build` folder. To change the output location, change the `output` option in `package.json`.
-
-## Deploying
-
-Make sure your post has been built, then deploy the docs folder via any static hosting service.
-
-## Dependencies
-
-You can install custom dependencies by running `npm install <package-name> --save`. Note that any collaborators will also need download the package locally by running `npm install` after pulling the changes.
+[/TextContainer]
