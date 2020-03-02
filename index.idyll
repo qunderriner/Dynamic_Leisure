@@ -1,9 +1,5 @@
 [meta title:"Underriner_Dynamic" description:"An Investigation of American Time Use Data" 
-<<<<<<< HEAD
   shareImageUrl:"https://github.com/qunderriner/Dynamic_Leisure/blob/master/static/images/3r3bgs.svg"
-=======
-  shareImageUrl:"https://github.com/qunderriner/Dynamic_Leisure/blob/master/static/images/3r3bgs.jpg"
->>>>>>> e071d3cbae907144b75c98fbfa4c35eff2fa2316
   shareImageWidth:"500"
   shareImageHeight:"500"/]
 
@@ -31,10 +27,6 @@ I took those who labeled themselves as the happiest,
 and the least stressed, and examined how, on average, 
 they were spending their time compared to those who rated 
 themselves and deeply unhappy, and extremely stressed. 
-<<<<<<< HEAD
-
-=======
->>>>>>> e071d3cbae907144b75c98fbfa4c35eff2fa2316
 [/TextContainer]
 
 [var name:"state" value:0 /]
@@ -49,15 +41,9 @@ themselves and deeply unhappy, and extremely stressed.
     related activities and 26 more minutes on personal care. 
 
   [/Step]  
-<<<<<<< HEAD
 
   [data name:"map1" source:"testmapdata2.csv"  /]
   
 
-=======
-
-  [data name:"map1" source:"testmapdata2.csv"  /]
-  
->>>>>>> e071d3cbae907144b75c98fbfa4c35eff2fa2316
   
 [/Scroller]
