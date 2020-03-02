@@ -9,6 +9,7 @@
     "authorView": false
   },
   "dependencies": {
+<<<<<<< HEAD
     "bibtex-parser": "0.0.0",
     "d3": "^4.13.0",
     "firebase": "^7.9.3",
@@ -18,11 +19,24 @@
     "idyll-d3-component": "^2.1.0",
     "idyll-vega-lite": "^2.0.0",
     "svg-path-generator": "^1.1.0"
+=======
+    "core-js": "^3.6.4",
+    "d3": "^4.0.0",
+    "idyll": "^4.10.1",
+    "idyll-d3-component": "^2.0.0",
+    "idyll-vega-lite": "^2.0.0",
+    "vega-lite": "^4.4.0"
+>>>>>>> e071d3cbae907144b75c98fbfa4c35eff2fa2316
   },
   "devDependencies": {
     "gh-pages": "^0.12.0"
   },
+<<<<<<< HEAD
   "scripts": {
     "start": "idyll",
     "build": "yarn build"
 }}
+=======
+  "scripts": {"start": "idyll"}
+}
+>>>>>>> e071d3cbae907144b75c98fbfa4c35eff2fa2316
