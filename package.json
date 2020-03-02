@@ -9,13 +9,20 @@
     "authorView": false
   },
   "dependencies": {
-    "d3": "^4.0.0",
+    "bibtex-parser": "0.0.0",
+    "d3": "^4.13.0",
+    "firebase": "^7.9.3",
+    "hilbert": "^2.0.0",
     "idyll": "^4.0.0",
-    "idyll-d3-component": "^2.0.0",
-    "idyll-vega-lite": "^2.0.0"
+    "idyll-components": "^3.12.1",
+    "idyll-d3-component": "^2.1.0",
+    "idyll-vega-lite": "^2.0.0",
+    "svg-path-generator": "^1.1.0"
   },
   "devDependencies": {
     "gh-pages": "^0.12.0"
   },
-  "scripts": {"start": "idyll"}
-}
+  "scripts": {
+    "start": "idyll",
+    "build": "yarn build"
+}}

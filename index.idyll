@@ -1,5 +1,5 @@
 [meta title:"Underriner_Dynamic" description:"An Investigation of American Time Use Data" 
-  shareImageUrl:"https://github.com/qunderriner/Dynamic_Leisure/blob/master/static/images/3r3bgs.jpg"
+  shareImageUrl:"https://github.com/qunderriner/Dynamic_Leisure/blob/master/static/images/3r3bgs.svg"
   shareImageWidth:"500"
   shareImageHeight:"500"/]
 
@@ -27,6 +27,7 @@ I took those who labeled themselves as the happiest,
 and the least stressed, and examined how, on average, 
 they were spending their time compared to those who rated 
 themselves and deeply unhappy, and extremely stressed. 
+
 [/TextContainer]
 
 [var name:"state" value:0 /]
@@ -44,5 +45,6 @@ themselves and deeply unhappy, and extremely stressed.
 
   [data name:"map1" source:"testmapdata2.csv"  /]
   
+
   
 [/Scroller]
