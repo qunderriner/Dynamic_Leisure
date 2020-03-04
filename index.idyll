@@ -42,28 +42,7 @@ themselves and deeply unhappy, and extremely stressed.
 
   [/Step]  
 
-  [data name:"map1" source:"testmapdata2.csv"  /]
- 
 
-
-  [Table data:map1 /]
-
-  [VegaLite data:map1 spec:`{
-    mark: "line",
-    encoding: {
-      x: {
-        field: "STATEFIP",
-        type: "quantitative",
-        axis: {title: "FIP"}
-      },
-      y: {
-        field: "Eating & Drinking",
-        type: "quantitative",
-        axis: {title: "Min Eating"},
-        scale: { domain: [0, 120] }
-      }
-    }
-  }` /]
 
   
 
